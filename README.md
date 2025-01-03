@@ -1,4 +1,4 @@
-# enrollment-streamlit
+# enrollment-wa-bot
 
 Como prueba de concepto se espera usar la interfaz sobre la API de telegram: [PTB](https://github.com/python-telegram-bot/python-telegram-bot), como conexión principal para llevar funcionalidades de contabilidad y registro de usuarios
 
