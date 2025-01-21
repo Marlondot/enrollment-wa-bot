@@ -1,4 +1,4 @@
-# enrollment-streamlit
+# enrollment-wa-bot
 
 Como prueba de concepto se espera usar la interfaz sobre la API de telegram: [PTB](https://github.com/python-telegram-bot/python-telegram-bot), como conexión principal para llevar funcionalidades de contabilidad y registro de usuarios
 
@@ -28,3 +28,13 @@ Para pruebas locales se puede crear una [conexión local MySQL](https://github.c
 Además para probar con una base de datos en nube se puede usar la [capa gratuita de MongoDB](https://www.mongodb.com/pricing) 
 
 También se pueden buscar otras maneras de hosting para bases de datos en [foros](https://www.reddit.com/r/webdev/comments/vc2hpc/any_websites_where_i_can_host_sqlite_db_for_free/), la  idea es no cerrarse a explorar
+
+## Tareas
+
+- [ ] Crear funciones de queries para la base de datos, esto es importante para [abstraer la capa de persistencia y separarla de la capa de dominio](https://martinfowler.com/eaaCatalog/repository.html) Para esto usaremos MySQl en local, luego la idea será explorar el deploy en una VPS. En un principio hay mucha mano libre para esto, entonces no hay restricciones sobre cómo organizar las funciones. Mi recomendación es pensar en un repositorio como en funciones del lenguaje (python) que hacen CRUD sobre una tabla de SQL, por cada tabla en la base de datos existe un repositorio. (MID)
+
+- [ ] Crea una función handler y la función main que pregunte y reciba un número enviado por mensaje, además de que llame a la función del repositorio, como son dos tareas diferentes se puede llamar a una función placeholder y luego corregirla por la función real cuando la del repositorio esté lista. (MID)
+
+## PRs
+
+Vamos a manejar un flujo sencillo de PRs, en el que cada nueva feature o cambio será hecho a partir de una rama sacada desde master (lo más común es que en el flujo existan la rama de develop y de master, pero para este caso vamos a obviarlo), y para hacer un merge a master vamos a hacer peer review a los cambios introducidos, proponer cambios o dar sugerencias. 
