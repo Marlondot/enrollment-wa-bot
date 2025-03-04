@@ -40,7 +40,7 @@ También se pueden buscar otras maneras de hosting para bases de datos en [foros
 Vamos a manejar un flujo sencillo de PRs, en el que cada nueva feature o cambio será hecho a partir de una rama sacada desde master (lo más común es que en el flujo existan la rama de develop y de master, pero para este caso vamos a obviarlo), y para hacer un merge a master vamos a hacer peer review a los cambios introducidos, proponer cambios o dar sugerencias. 
 
 
-## Como correr VENV
+## Cómo correr VENV
 
 A la hora de usar python entre proyectos lo ideal es usar un ambiente virtual o virtual environment
 
